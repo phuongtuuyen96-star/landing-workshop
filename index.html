@@ -1,94 +1,145 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Workshop Rèn luyện Kỷ luật & Định hướng phát triển</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; }
-    header { background: linear-gradient(135deg, #001F3F, #FF851B); color: white; padding: 60px 20px; text-align: center; }
-    header h1 { font-size: 2.5em; margin: 0; }
-    header p { font-size: 1.2em; margin: 10px 0 20px; }
-    .btn { background: #FF851B; color: white; padding: 12px 25px; text-decoration: none; border-radius: 6px; font-weight: bold; }
-    section { padding: 50px 20px; max-width: 1000px; margin: auto; }
-    section h2 { color: #001F3F; margin-bottom: 20px; }
-    section p { margin-bottom: 20px; }
-    .highlight { background: #f9f9f9; padding: 20px; border-left: 5px solid #FF851B; margin-bottom: 20px; }
-    footer { background: #001F3F; color: white; text-align: center; padding: 20px; }
-    .countdown { font-size: 1.5em; font-weight: bold; color: #FF851B; }
-    .form-box { background: #f1f1f1; padding: 20px; border-radius: 8px; }
-    iframe { width: 100%; height: 600px; border: none; border-radius: 8px; }
-  </style>
-</head>
-<body>
-
-<header>
-  <h1>Workshop Rèn luyện Kỷ luật bản thân & Định hướng Phát triển</h1>
-  <p>Chia sẻ cùng chuyên gia <strong>Jenny – Tâm lý & Giám đốc phát triển nhân sự</strong></p>
-  <p class="countdown" id="countdown"></p>
-  <a href="#dangky" class="btn">Đăng ký ngay</a>
-</header>
-
-<section>
-  <h2>Vấn đề của người trẻ hôm nay</h2>
-  <p>Nhiều bạn trẻ hiện nay đang phải đối mặt với tình trạng <strong>trì hoãn, mông lung, thiếu định hướng</strong> trong cuộc sống và sự nghiệp. 
-  Dù có nhiều cơ hội xung quanh, nhưng việc thiếu kỷ luật bản thân khiến các bạn dễ bỏ lỡ tương lai tươi sáng.</p>
-  <p>Tại workshop này, cô <strong>Jenny</strong> sẽ chia sẻ phương pháp rèn luyện kỷ luật và cách định hướng bản thân, giúp bạn vượt qua trì hoãn và tìm ra con đường phát triển rõ ràng.</p>
-</section>
-
-<section>
-  <h2>Dành cho ai?</h2>
-  <p>👉 Các bạn <strong>sinh viên</strong> đang cần định hướng. <br>
-     👉 Người đã đi làm nhưng còn <strong>chưa ổn định</strong>, đang sinh sống và học tập tại <strong>Huế</strong>. <br>
-     👉 Những ai muốn trang bị cho mình kỹ năng kỷ luật – yếu tố then chốt để vững vàng trong xã hội.</p>
-</section>
-
-<section>
-  <h2>Tại sao không thể bỏ lỡ?</h2>
-  <div class="highlight">
-    <p>Đây là <strong>cơ hội hiếm có</strong>. Nếu bỏ lỡ, bạn sẽ phải đối mặt với nhiều khó khăn trong tương lai vì xã hội đang ngày càng đòi hỏi cao ở những người trẻ. 
-    Kỷ luật bản thân không chỉ là một kỹ năng, mà là một “vũ khí” để bạn tự tin bước vào mọi môi trường.</p>
-  </div>
-</section>
-
-<section>
-  <h2>Điểm đặc biệt của Workshop</h2>
-  <p>Không chỉ là chuyên gia tâm lý, cô <strong>Jenny</strong> còn là một <strong>giám đốc doanh nghiệp</strong>. 
-  Nhờ vậy, cô có thể mang đến góc nhìn từ phía <strong>người tuyển dụng</strong>, giúp bạn hiểu rõ những kỹ năng và phẩm chất mà nhà tuyển dụng thực sự cần ở ứng viên.</p>
-</section>
-
-<section id="dangky">
-  <h2>Đăng ký tham gia</h2>
-  <p>Phí tham gia: <strong>0đ (được hỗ trợ 100%)</strong> 🎉 <br> Quà tặng: <strong>Bài test tính cách</strong></p>
-  <div class="form-box">
-    <iframe src="https://forms.gle/zwX7D9CUaHceudjD9"></iframe>
-  </div>
-  <p>Sau khi đăng ký, <strong>BTC sẽ liên hệ</strong> và gửi kết quả xác nhận cho bạn.</p>
-</section>
-
-<footer>
-  <p>© 2025 Workshop Rèn luyện Kỷ luật bản thân & Định hướng phát triển – cùng Jenny</p>
-</footer>
-
-<script>
-  // Countdown đến ngày 7/9/2025
-  var countDownDate = new Date("Sep 7, 2025 00:00:00").getTime();
-  var x = setInterval(function() {
-    var now = new Date().getTime();
-    var distance = countDownDate - now;
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    document.getElementById("countdown").innerHTML =
-      "Còn " + days + " ngày " + hours + " giờ " + minutes + " phút " + seconds + " giây";
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("countdown").innerHTML = "Workshop đã bắt đầu!";
+    body {
+      font-family: 'Inter', sans-serif;
     }
-  }, 1000);
-</script>
+  </style>
 
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="Workshop Rèn luyện Kỷ luật bản thân & Định hướng phát triển – miễn phí tại Huế cùng chuyên gia Jenny.">
+  <meta property="og:title" content="Workshop Rèn luyện Kỷ luật & Định hướng phát triển">
+  <meta property="og:description" content="Cùng chuyên gia Jenny rèn luyện kỷ luật và tìm định hướng sự nghiệp rõ ràng. Tham gia miễn phí tại Huế!">
+  <meta property="og:image" content="https://i.ibb.co/4Ymjg8t/banner-workshop.jpg"> <!-- thay link ảnh thật -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header Section -->
+  <header class="bg-gradient-to-r from-blue-900 to-yellow-600 text-white py-20 px-4 text-center rounded-b-3xl shadow-xl">
+    <div class="container mx-auto">
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-2">Workshop Rèn luyện Kỷ luật bản thân & Định hướng Phát triển</h1>
+      <p class="text-lg md:text-xl font-semibold opacity-90 mb-6">Chia sẻ cùng chuyên gia <span class="text-yellow-300 font-bold">Jenny – Tâm lý & Giám đốc phát triển nhân sự</span></p>
+      <div id="countdown" class="flex justify-center gap-4 mb-8 text-yellow-300 font-bold text-2xl md:text-3xl"></div>
+      <a href="#dangky" class="inline-block bg-yellow-500 hover:bg-yellow-600 transition duration-300 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105">Đăng ký ngay</a>
+    </div>
+  </header>
+
+  <!-- Content Sections -->
+  <main class="container mx-auto px-4">
+    
+    <section class="py-16 md:py-20">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">Vấn đề của người trẻ hôm nay</h2>
+        <p class="text-lg mb-4">Nhiều bạn trẻ hiện nay đang phải đối mặt với tình trạng <span class="font-bold text-red-600">trì hoãn, mông lung, thiếu định hướng</span> trong cuộc sống và sự nghiệp...</p>
+        <p class="text-lg">Tại workshop này, cô <span class="font-semibold text-blue-800">Jenny</span> sẽ chia sẻ phương pháp rèn luyện kỷ luật và cách định hướng bản thân...</p>
+      </div>
+    </section>
+
+    <section class="py-16 bg-white rounded-xl shadow-lg mb-8">
+      <h2 class="text-3xl font-bold text-center text-blue-900 mb-8">Dành cho ai?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center max-w-4xl mx-auto">
+        <div class="p-6 bg-yellow-50 border border-yellow-200 rounded-lg">
+          <p class="text-lg font-semibold mb-2">Sinh viên</p>
+          <p>Các bạn <span class="font-bold">sinh viên</span> đang cần định hướng.</p>
+        </div>
+        <div class="p-6 bg-yellow-50 border border-yellow-200 rounded-lg">
+          <p class="text-lg font-semibold mb-2">Người đi làm</p>
+          <p>Người đã đi làm nhưng còn <span class="font-bold">chưa ổn định</span>, đang sinh sống và học tập tại <span class="font-bold">Huế</span>.</p>
+        </div>
+        <div class="p-6 bg-yellow-50 border border-yellow-200 rounded-lg">
+          <p class="text-lg font-semibold mb-2">Tất cả mọi người</p>
+          <p>Những ai muốn trang bị cho mình kỹ năng kỷ luật – yếu tố then chốt để vững vàng trong xã hội.</p>
+        </div>
+      </div>
+    </section>
+<section class="py-16">
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-gray-200 p-8 md:p-12 rounded-2xl shadow-inner">
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Tại sao không thể bỏ lỡ?</h2>
+          <p class="text-lg italic">Đây là <span class="font-bold text-yellow-600">cơ hội hiếm có</span>... Kỷ luật bản thân không chỉ là một kỹ năng, mà là một “vũ khí” để bạn tự tin bước vào mọi môi trường.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="py-16 md:py-20">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">Điểm đặc biệt của Workshop</h2>
+        <p class="text-lg">Không chỉ là chuyên gia tâm lý, cô <span class="font-semibold text-blue-800">Jenny</span> còn là một <span class="font-bold">giám đốc doanh nghiệp</span>...</p>
+      </div>
+    </section>
+    
+    <!-- Registration Section -->
+    <section id="dangky" class="py-16 md:py-20">
+      <div class="bg-white p-6 md:p-10 rounded-xl shadow-2xl max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-6">Đăng ký tham gia</h2>
+        <p class="text-xl text-center mb-4">Phí tham gia: <span class="font-bold text-green-600">0đ (được hỗ trợ 100%)</span> 🎉</p>
+        <p class="text-xl text-center mb-8">Quà tặng: <span class="font-bold text-yellow-600">Bài test tính cách</span></p>
+        <div class="relative w-full h-96 overflow-hidden rounded-lg shadow-inner">
+          <iframe src="https://forms.gle/zwX7D9CUaHceudjD9" class="absolute inset-0 w-full h-full border-none"></iframe>
+        </div>
+        <p class="text-center text-lg mt-6">Sau khi đăng ký, <span class="font-semibold">BTC sẽ liên hệ</span> và gửi kết quả xác nhận cho bạn.</p>
+      </div>
+    </section>
+
+    <!-- Call-to-action cuối -->
+    <section class="py-12 text-center">
+      <a href="#dangky" class="inline-block bg-blue-900 hover:bg-blue-800 transition duration-300 text-white font-bold py-4 px-10 rounded-full shadow-lg transform hover:scale-105">Đăng ký ngay hôm nay 🚀</a>
+    </section>
+    
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-900 text-gray-300 py-8 px-4 mt-12 text-center rounded-t-3xl shadow-inner">
+    <p>&copy; 2025 Workshop Rèn luyện Kỷ luật bản thân & Định hướng phát triển – cùng Jenny</p>
+  </footer>
+
+  <!-- JavaScript for Countdown -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const countDownDate = new Date("Sep 7, 2025 00:00:00").getTime();
+      const countdownElement = document.getElementById("countdown");
+
+      const updateCountdown = () => {
+        const now = new Date().getTime();
+        const distance = countDownDate - now;
+
+        if (distance < 0) {
+          clearInterval(x);
+          countdownElement.innerHTML = "<span class='text-green-400'>Workshop đã bắt đầu!</span>";
+          return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        countdownElement.innerHTML = `
+          <div class="bg-gray-800 px-4 py-2 rounded-lg">${days}<br><span class="text-sm">Ngày</span></div>
+          <div class="bg-gray-800 px-4 py-2 rounded-lg">${hours}<br><span class="text-sm">Giờ</span></div>
+          <div class="bg-gray-800 px-4 py-2 rounded-lg">${minutes}<br><span class="text-sm">Phút</span></div>
+          <div class="bg-gray-800 px-4 py-2 rounded-lg">${seconds}<br><span class="text-sm">Giây</span></div>
+        `;
+      };
+
+      updateCountdown();
+      const x = setInterval(updateCountdown, 1000);
+    });
+  </script>
 </body>
 </html>
