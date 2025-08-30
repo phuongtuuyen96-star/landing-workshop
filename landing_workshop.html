@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshop Rèn luyện Kỷ luật & Định hướng phát triển</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; }
+    header { background: linear-gradient(135deg, #001F3F, #FF851B); color: white; padding: 60px 20px; text-align: center; }
+    header h1 { font-size: 2.5em; margin: 0; }
+    header p { font-size: 1.2em; margin: 10px 0 20px; }
+    .btn { background: #FF851B; color: white; padding: 12px 25px; text-decoration: none; border-radius: 6px; font-weight: bold; }
+    section { padding: 50px 20px; max-width: 1000px; margin: auto; }
+    section h2 { color: #001F3F; margin-bottom: 20px; }
+    section p { margin-bottom: 20px; }
+    .highlight { background: #f9f9f9; padding: 20px; border-left: 5px solid #FF851B; margin-bottom: 20px; }
+    footer { background: #001F3F; color: white; text-align: center; padding: 20px; }
+    .countdown { font-size: 1.5em; font-weight: bold; color: #FF851B; }
+    .form-box { background: #f1f1f1; padding: 20px; border-radius: 8px; }
+    iframe { width: 100%; height: 600px; border: none; border-radius: 8px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Workshop Rèn luyện Kỷ luật bản thân & Định hướng Phát triển</h1>
+  <p>Chia sẻ cùng chuyên gia <strong>Jenny – Tâm lý & Giám đốc phát triển nhân sự</strong></p>
+  <p class="countdown" id="countdown"></p>
+  <a href="#dangky" class="btn">Đăng ký ngay</a>
+</header>
+
+<section>
+  <h2>Vấn đề của người trẻ hôm nay</h2>
+  <p>Nhiều bạn trẻ hiện nay đang phải đối mặt với tình trạng <strong>trì hoãn, mông lung, thiếu định hướng</strong> trong cuộc sống và sự nghiệp. 
+  Dù có nhiều cơ hội xung quanh, nhưng việc thiếu kỷ luật bản thân khiến các bạn dễ bỏ lỡ tương lai tươi sáng.</p>
+  <p>Tại workshop này, cô <strong>Jenny</strong> sẽ chia sẻ phương pháp rèn luyện kỷ luật và cách định hướng bản thân, giúp bạn vượt qua trì hoãn và tìm ra con đường phát triển rõ ràng.</p>
+</section>
+
+<section>
+  <h2>Dành cho ai?</h2>
+  <p>👉 Các bạn <strong>sinh viên</strong> đang cần định hướng. <br>
+     👉 Người đã đi làm nhưng còn <strong>chưa ổn định</strong>, đang sinh sống và học tập tại <strong>Huế</strong>. <br>
+     👉 Những ai muốn trang bị cho mình kỹ năng kỷ luật – yếu tố then chốt để vững vàng trong xã hội.</p>
+</section>
+
+<section>
+  <h2>Tại sao không thể bỏ lỡ?</h2>
+  <div class="highlight">
+    <p>Đây là <strong>cơ hội hiếm có</strong>. Nếu bỏ lỡ, bạn sẽ phải đối mặt với nhiều khó khăn trong tương lai vì xã hội đang ngày càng đòi hỏi cao ở những người trẻ. 
+    Kỷ luật bản thân không chỉ là một kỹ năng, mà là một “vũ khí” để bạn tự tin bước vào mọi môi trường.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Điểm đặc biệt của Workshop</h2>
+  <p>Không chỉ là chuyên gia tâm lý, cô <strong>Jenny</strong> còn là một <strong>giám đốc doanh nghiệp</strong>. 
+  Nhờ vậy, cô có thể mang đến góc nhìn từ phía <strong>người tuyển dụng</strong>, giúp bạn hiểu rõ những kỹ năng và phẩm chất mà nhà tuyển dụng thực sự cần ở ứng viên.</p>
+</section>
+
+<section id="dangky">
+  <h2>Đăng ký tham gia</h2>
+  <p>Phí tham gia: <strong>0đ (được hỗ trợ 100%)</strong> 🎉 <br> Quà tặng: <strong>Bài test tính cách</strong></p>
+  <div class="form-box">
+    <iframe src="https://forms.gle/zwX7D9CUaHceudjD9"></iframe>
+  </div>
+  <p>Sau khi đăng ký, <strong>BTC sẽ liên hệ</strong> và gửi kết quả xác nhận cho bạn.</p>
+</section>
+
+<footer>
+  <p>© 2025 Workshop Rèn luyện Kỷ luật bản thân & Định hướng phát triển – cùng Jenny</p>
+</footer>
+
+<script>
+  // Countdown đến ngày 7/9/2025
+  var countDownDate = new Date("Sep 7, 2025 00:00:00").getTime();
+  var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    document.getElementById("countdown").innerHTML =
+      "Còn " + days + " ngày " + hours + " giờ " + minutes + " phút " + seconds + " giây";
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("countdown").innerHTML = "Workshop đã bắt đầu!";
+    }
+  }, 1000);
+</script>
+
+</body>
+</html>
